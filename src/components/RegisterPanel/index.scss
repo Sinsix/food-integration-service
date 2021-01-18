@@ -106,66 +106,42 @@
                 }
             }
 
-            input[type=text] {
-                width              : 30vw;
-                height             : 5vh;
-                font-style         : normal;
-                font-weight        : normal;
-                font-size          : 20px;
-                text-align         : left;
-                border             : 2px solid;
+            .FormInput {
+                padding-left: 1vw;
+                padding-right: 1vw;
+                width: 30vw;
+                height: 5vh;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 1.3vw;
+                text-align: left;
+                border: 0.3vh solid;
                 border-image-source: radial-gradient(202.04% 202.04% at 50% 50%, #32435C 0%, #79A1DB 39.52%);
                 border-image-slice : 1;
-                color              : #79A1DB;
-                outline            : none;
+                color: #79A1DB;
+                outline: none;
             }
 
-            input[type=email] {
-                width              : 30vw;
-                height             : 5vh;
-                font-style         : normal;
-                font-weight        : normal;
-                font-size          : 20px;
-                text-align         : left;
-                border             : 2px solid;
-                border-image-source: radial-gradient(202.04% 202.04% at 50% 50%, #32435C 0%, #79A1DB 39.52%);
-                border-image-slice : 1;
-                color              : #79A1DB;
-                outline            : none;
             }
-
-            input[type=password] {
-                width       : 30vw;
-                height      : 5vh;
-                border-color: #79A1DB;
-
-                font-style         : normal;
-                font-weight        : normal;
-                font-size          : 20px;
-                text-align         : left;
-                border             : 2px solid;
-                border-image-source: radial-gradient(202.04% 202.04% at 50% 50%, #32435C 0%, #79A1DB 39.52%);
-                border-image-slice : 1;
-                color              : #79A1DB;
-                outline            : none;
-
-            }
-
             #SubmitButton {
-                font-family  : Spartan;
-                font-style   : normal;
-                font-weight  : bold;
-                font-size    : 18px;
-                line-height  : 33px;
-                text-align   : center;
-                border       : none;
-                outline      : none;
-                color        : #C7D9F3;
-                background   : #79A1DB;
-                border-radius: 10px;
-                width        : 8vw;
-                height       : 7vh;
+                font-family: Spartan;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 1.1vw;
+                text-align: center;
+                border: none;
+                outline: none;
+                color: #C7D9F3;
+                background: #79A1DB;
+                border-radius: 1.5vh;
+                width: 8vw;
+                height: 7vh;
+            }
+
+            #SubmitButton:hover{
+                transition: all 0.4s;
+                background: #32435C;
+                color: #C7D9F3;
             }
         }
     }
-}
