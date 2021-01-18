@@ -1,9 +1,13 @@
-html,
-body {
+html{
+font-family: Spartan;
+}
+html, body {
   padding: 0;
   margin: 0;
 }
-
+html, body, #root{
+  height: 100%;
+}
 a {
   text-decoration: none;
   cursor: pointer;

@@ -1,13 +1,19 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import './App.scss'
 
 import Header from './components/Header'
+import BodyPanel from './components/BodyPanel'
+// import RegisterPanel from './components/RegisterPanel'
 
 function App () {
-  const menu = ['Administrador', 'Ajuda']
+  const options = ['Administrador', 'Ajuda']
 
   return (
-    <Header menu={menu} color="blue"/>
+    <Fragment>
+    <Header options={options}/>
+    <BodyPanel/>
+    {/* <RegisterPanel/> */}
+    </Fragment>
   )
 }
 

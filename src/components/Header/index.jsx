@@ -5,30 +5,25 @@ import logo from './../../assets/Logotipo.png'
 
 import './index.scss'
 
-const Header = function (props) {
-  console.log(props.color)
-
+const Header = (props) => {
   return (
     <header className="Header">
-      <div className="wrap">
-
-        <div className="logo">
-          <img src={logo} alt="Sinsix"/>
+      <div className="NavBar">
+        <div className="Logotype">
+          <img src={logo} alt="Sinsix" id="Logo"/>
         </div>
-
-        <div className="actions">
-          <a href="/"> {props.menu[0]} </a>
-          <a href="/">{props.menu[1]}</a>
-          <a href="/">{props.menu[2]}</a>
+        <div className="Menu">
+          {
+           Array.isArray(props.options) && props.options.map((e) => <a href="/" key="">{e}</a>)
+          }
         </div>
-
       </div>
     </header>
   )
 }
 
 Header.propTypes = {
-  altura: PropTypes.number
+  options: PropTypes.object
 }
 
 export default Header

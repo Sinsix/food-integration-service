@@ -1,0 +1,147 @@
+.RegisterPanel {
+    display   : flex;
+    background: linear-gradient(90deg, rgba(199, 217, 243, 1) 0%, rgba(199, 217, 243, 0) 32%);
+    height    : 100vh - 9vh;
+
+    ::-webkit-input-placeholder {
+        font-style : normal;
+        font-weight: normal;
+        font-size  : 18px;
+        text-align : left;
+        color      : #79A1DB;
+    }
+
+    :-moz-placeholder {
+        /* Firefox 18- */
+        font-style : normal;
+        font-weight: normal;
+        font-size  : 18px;
+        text-align : left;
+        color      : #79A1DB;
+    }
+
+    ::-moz-placeholder {
+        /* Firefox 19+ */
+        font-style : normal;
+        font-weight: normal;
+        font-size  : 18px;
+        text-align : left;
+        color      : #79A1DB;
+    }
+
+    :-ms-input-placeholder {
+        font-style : normal;
+        font-weight: normal;
+        font-size  : 18px;
+        text-align : left;
+        color      : #79A1DB;
+    }
+
+    #SideLogo {
+        position       : relative;
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+        width          : 33vw;
+
+        img {
+            display    : absolute;
+            filter     : drop-shadow(7px 6px 14px rgba(0, 0, 0, 0.4));
+            margin-left: 20px;
+            width      : 20vw;
+        }
+    }
+
+    .Register {
+        width          : 100%;
+        display        : flex;
+        flex-direction : column;
+        row-gap        : 2vh;
+        align-items    : center;
+        justify-content: center;
+
+        h1 {
+            font-style         : normal;
+            font-weight        : bold;
+            font-size          : 40px;
+            text-align         : center;
+            color              : #32435C;
+            margin             : 0px;
+            border-bottom      : 2px solid;
+            border-image-source: linear-gradient(270deg, rgba(156, 186, 230, 0) 0%, #79A1DB 50.31%, rgba(199, 217, 243, 0) 100%);
+            border-image-slice : 1;
+        }
+
+        form {
+            display       : flex;
+            flex-direction: column;
+            row-gap       : 2vh;
+            align-items   : center;
+
+            #Terms {
+                display: flex;
+                align-items: center;
+
+                input[type=checkbox] {
+                    display            : inline-block;
+                    height             : 5vh;
+                    text-align         : left;
+                    border             : 2px solid #79A1DB;
+                    outline            : none;
+                    -ms-transform: scale(2); /* Internet Explorer */
+                    -moz-transform: scale(2); /* FireFox */
+                    -webkit-transform: scale(2); /* Safari and Chrome */
+                    -o-transform: scale(2); /* Opera */
+                    transform: scale(2);
+                    color: #79A1DB;
+                    background-color: #79A1DB;
+                    border-color: #79A1DB;
+                }
+ 
+                label {
+                    display: inline-block;
+                    margin: 0;
+                    padding-left: 1vw;
+                    color: #79A1DB;
+                }
+            }
+
+            .FormInput {
+                padding-left: 1vw;
+                padding-right: 1vw;
+                width: 30vw;
+                height: 5vh;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 1.3vw;
+                text-align: left;
+                border: 0.3vh solid;
+                border-image-source: radial-gradient(202.04% 202.04% at 50% 50%, #32435C 0%, #79A1DB 39.52%);
+                border-image-slice : 1;
+                color: #79A1DB;
+                outline: none;
+            }
+
+            }
+            #SubmitButton {
+                font-family: Spartan;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 1.1vw;
+                text-align: center;
+                border: none;
+                outline: none;
+                color: #C7D9F3;
+                background: #79A1DB;
+                border-radius: 1.5vh;
+                width: 8vw;
+                height: 7vh;
+            }
+
+            #SubmitButton:hover{
+                transition: all 0.4s;
+                background: #32435C;
+                color: #C7D9F3;
+            }
+        }
+    }

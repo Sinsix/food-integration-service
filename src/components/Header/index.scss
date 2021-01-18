@@ -1,44 +1,56 @@
 
 .Header {
-    position: absolute;
+    font-size: 1.8vw;
+    position: relative;
     min-width: 100vw;
-    height: 86px;
+    height: 9vh;
     left: 0px;
     top: 0px;
     
     background: linear-gradient(90deg, #32435C 0%, #79A1DB 50%);
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
-    
-    .wrap{
+    box-shadow: 0px 0.3vw 0.3vw rgba(0, 0, 0, 0.25);
+    //border: 3px solid pink; // just to help
+    .NavBar{
         display: flex;
         align-items: center;
         position: relative;
-        max-width: 1450px;
+        height: 100%;
         margin: 0 auto;
-        // border: 3px solid red; // just to help
+        //border: 3px solid red; // just to help
         
-        .logo{
+        .Logotype{
             display: flex;
             padding-left: 20px;
             justify-content: center;
             align-items: center;
-            // border: 3px solid green; // just to help
+            width: 10vw;
+            //border: 3px solid green; // just to help
+
+            #Logo{
+                width: 10vw;
+            }
         }
 
-        .actions {
+        .Menu{
             display: flex;
             width: 100%;
             justify-content: flex-end;
             padding-right: 20px;
             align-items: center;
-            font-size: 2rem;
+    
             font-weight: 400;
             column-gap: 22px;
-            // border: 3px solid blue; // just to help
+            //border: 3px solid blue; // just to help
 
             a {
                 color: #FFFFFF;
             }
+            a:hover{
+                transition: all 0.5s;
+                color: #32435C;
+                text-shadow: 0px 0.3vw 0.3vw rgba(0, 0, 0, 0.25);
+            }
+            
         }
     }
 }
