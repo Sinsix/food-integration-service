@@ -12,8 +12,8 @@ const BodyPanel = (props) => {
                 <h1>Bem Vindo</h1>
                 <h3>Entrar</h3>
                 <form action=" ">
-                    <input type="text" placeholder="usuário" id="UserLogin" name="UserLogin" />
-                    <input type="password" placeholder="senha" id="UserPassword" name="UserPassword" />
+                    <input type="text" className="FormInput" placeholder="usuário" id="UserLogin" name="UserLogin" />
+                    <input type="password" className="FormInput" placeholder="senha" id="UserPassword" name="UserPassword" />
                      <a href="/">Esqueceu a senha?</a> {/* route link to registration page */}
                     <input type="submit" value="Login" id="SubmitButton" name="SubmitButton" />
                     {/* Submit button for login form */}
