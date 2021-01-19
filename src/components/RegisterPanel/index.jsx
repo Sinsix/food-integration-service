@@ -1,5 +1,5 @@
 import React from 'react'
-import LogoSide from './../../assets/Logo Side Colunm.png'
+import LogoSide from './../../assets/Logo-FIS-Triangle.png'
 import './index.scss'
 
 const RegisterPanel = (props) => {

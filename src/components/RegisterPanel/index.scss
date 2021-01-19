@@ -1,93 +1,93 @@
 .RegisterPanel {
-    display   : flex;
+    display: flex;
     background: linear-gradient(90deg, rgba(199, 217, 243, 1) 0%, rgba(199, 217, 243, 0) 32%);
-    height    : 100vh - 9vh;
+    min-height: 100vh - 9vh;
 
     ::-webkit-input-placeholder {
-        font-style : normal;
+        font-style: normal;
         font-weight: normal;
-        font-size  : 18px;
-        text-align : left;
-        color      : #79A1DB;
+        font-size: 18px;
+        text-align: left;
+        color: #79A1DB;
     }
 
     :-moz-placeholder {
         /* Firefox 18- */
-        font-style : normal;
+        font-style: normal;
         font-weight: normal;
-        font-size  : 18px;
-        text-align : left;
-        color      : #79A1DB;
+        font-size: 18px;
+        text-align: left;
+        color: #79A1DB;
     }
 
     ::-moz-placeholder {
         /* Firefox 19+ */
-        font-style : normal;
+        font-style: normal;
         font-weight: normal;
-        font-size  : 18px;
-        text-align : left;
-        color      : #79A1DB;
+        font-size: 18px;
+        text-align: left;
+        color: #79A1DB;
     }
 
     :-ms-input-placeholder {
-        font-style : normal;
+        font-style: normal;
         font-weight: normal;
-        font-size  : 18px;
-        text-align : left;
-        color      : #79A1DB;
+        font-size: 18px;
+        text-align: left;
+        color: #79A1DB;
     }
 
     #SideLogo {
-        position       : relative;
-        display        : flex;
-        align-items    : center;
+        position: relative;
+        display: flex;
+        align-items: center;
         justify-content: center;
-        width          : 33vw;
+        width: 33vw;
 
         img {
-            display    : absolute;
-            filter     : drop-shadow(7px 6px 14px rgba(0, 0, 0, 0.4));
+            display: absolute;
+            filter: drop-shadow(0.45vw 0.4vw 1vw rgba(0, 0, 0, 0.2));
             margin-left: 20px;
-            width      : 20vw;
+            width: 30vw;
         }
     }
 
     .Register {
-        width          : 100%;
-        display        : flex;
-        flex-direction : column;
-        row-gap        : 2vh;
-        align-items    : center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2vh;
+        align-items: center;
         justify-content: center;
 
         h1 {
-            font-style         : normal;
-            font-weight        : bold;
-            font-size          : 40px;
-            text-align         : center;
-            color              : #32435C;
-            margin             : 0px;
-            border-bottom      : 2px solid;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            text-align: center;
+            color: #32435C;
+            margin: 0px;
+            border-bottom: 2px solid;
             border-image-source: linear-gradient(270deg, rgba(156, 186, 230, 0) 0%, #79A1DB 50.31%, rgba(199, 217, 243, 0) 100%);
-            border-image-slice : 1;
+            border-image-slice: 1;
         }
 
         form {
-            display       : flex;
+            display: flex;
             flex-direction: column;
-            row-gap       : 2vh;
-            align-items   : center;
+            row-gap: 2vh;
+            align-items: center;
 
             #Terms {
                 display: flex;
                 align-items: center;
 
                 input[type=checkbox] {
-                    display            : inline-block;
-                    height             : 5vh;
-                    text-align         : left;
-                    border             : 2px solid #79A1DB;
-                    outline            : none;
+                    display: inline-block;
+                    height: 5vh;
+                    text-align: left;
+                    border: 2px solid #79A1DB;
+                    outline: none;
                     -ms-transform: scale(2); /* Internet Explorer */
                     -moz-transform: scale(2); /* FireFox */
                     -webkit-transform: scale(2); /* Safari and Chrome */
