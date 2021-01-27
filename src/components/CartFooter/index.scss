@@ -1,0 +1,70 @@
+footer{
+    position: absolute;
+    bottom: 0;
+    background-color: #4E545C;
+    width: 100%;
+    height: 7vh;
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-flow: row;
+    #CartName{
+        width: 95%;
+        position: absolute;
+        text-align: center;
+        font-style: normal;
+        font-weight: 600;
+        p{
+            margin: 0;
+        }
+    }
+    #FooterCart{
+        width: 95%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-between;
+        align-items: center;
+        display: flex;
+        flex-flow: row;
+        // border: yellow solid 2px;//Just for help
+
+        #Price{
+            height: 100%;
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            justify-content: space-between;
+            // column-gap: 1vw;
+            cursor: pointer;
+            margin: 0;
+
+            #Total{
+                color: rgba(255, 255, 255, 0.6);
+            }
+        }
+
+        #CartIcon{
+            height: 100%;
+            font-size: 2em;
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+
+            p{
+                text-align: center;
+                height: 100%;
+                margin: 0px;
+            }
+
+            #CartImage{
+                max-width: 2vw;
+            }
+        }
+    }
+}

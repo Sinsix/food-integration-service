@@ -14,7 +14,7 @@ const Header = (props) => {
         </div>
         <div className="Menu">
           {
-           Array.isArray(props.options) && props.options.map((e) => <a href="/" key="">{e}</a>)
+           Array.isArray(props.options) && props.options.map((option, index) => <a href="/" key={index}>{option}</a>)
           }
         </div>
       </div>
