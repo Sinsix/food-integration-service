@@ -13,7 +13,7 @@ const CartFooter = (props) => {
                 <img src={CartIcon} alt="Carrinho" id="CartImage"/>
             </div>
             <div className="CartIten" id="Price">
-                <p id="Total">Total:</p>
+                <p id="Total">Total</p>
                 <p>R$00,00</p>
             </div>
         </div>

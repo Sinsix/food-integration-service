@@ -25,7 +25,7 @@ const NavBar = (props) => {
       </div>
       <div id="Container">
         <div className="SideMenu">
-          <MenuBars/>
+          <MenuBars operator={props.operator}/>
         </div>
         <div id="Hour">00:00</div>
       </div>
