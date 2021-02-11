@@ -1,4 +1,4 @@
-.BodyPanel {
+.LoginPanel {
     display: flex;
     background: linear-gradient(90deg, rgba(199, 217, 243, 1) 0%, rgba(199, 217, 243, 0) 32%);
     height: 100vh - 9vh;
@@ -8,7 +8,7 @@
         font-weight: normal;
         font-size: 1.2vw;
         text-align: left;
-        color: #79A1DB;
+        color: #79a1db;
     }
 
     :-moz-placeholder {
@@ -17,7 +17,7 @@
         font-weight: normal;
         font-size: 1.2vw;
         text-align: left;
-        color: #79A1DB;
+        color: #79a1db;
     }
 
     ::-moz-placeholder {
@@ -26,7 +26,7 @@
         font-weight: normal;
         font-size: 1.2vw;
         text-align: left;
-        color: #79A1DB;
+        color: #79a1db;
     }
 
     :-ms-input-placeholder {
@@ -34,7 +34,7 @@
         font-weight: normal;
         font-size: 1.2vw;
         text-align: left;
-        color: #79A1DB;
+        color: #79a1db;
     }
 
     #SideLogo {
@@ -52,7 +52,7 @@
         }
     }
 
-    .LoginPanel {
+    .LoginForm {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -65,10 +65,15 @@
             font-weight: bold;
             font-size: 2.7vw;
             text-align: center;
-            color: #32435C;
+            color: #32435c;
             margin: 0px;
             border-bottom: 0.3vh solid;
-            border-image-source: linear-gradient(270deg, rgba(156, 186, 230, 0) 0%, #79A1DB 50.31%, rgba(199, 217, 243, 0) 100%);
+            border-image-source: linear-gradient(
+                270deg,
+                rgba(156, 186, 230, 0) 0%,
+                #79a1db 50.31%,
+                rgba(199, 217, 243, 0) 100%
+            );
             border-image-slice: 1;
         }
 
@@ -78,7 +83,7 @@
             font-weight: 500;
             font-size: 1.9vw;
             text-align: center;
-            color: #61728A;
+            color: #61728a;
             margin: 0px;
         }
 
@@ -88,7 +93,7 @@
             font-weight: 500;
             font-size: 1.3vw;
             text-align: center;
-            color: #61728A;
+            color: #61728a;
         }
 
         #Register {
@@ -98,7 +103,7 @@
 
         .stroke {
             display: inline-block;
-            border-bottom: 0.3vh solid #BACAE1;
+            border-bottom: 0.3vh solid #bacae1;
             margin-left: 1vw;
             margin-right: 1vw;
             width: 10vw;
@@ -111,7 +116,7 @@
             font-size: 1.3vw;
             text-align: center;
             margin: 0px;
-            color: #79A1DB;
+            color: #79a1db;
         }
 
         form {
@@ -121,7 +126,7 @@
             align-items: center;
 
             a {
-                font-style: normal;  
+                font-style: normal;
                 font-weight: normal;
                 text-align: center;
                 font-size: 1.1vw;
@@ -138,13 +143,13 @@
                 font-size: 1.3vw;
                 text-align: left;
                 border: 0.3vh solid;
-                border-image-source: radial-gradient(202.04% 202.04% at 50% 50%, #32435C 0%, #79A1DB 39.52%);
-                border-image-slice : 1;
-                color: #79A1DB;
+                border-image-source: radial-gradient(202.04% 202.04% at 50% 50%, #32435c 0%, #79a1db 39.52%);
+                border-image-slice: 1;
+                color: #79a1db;
                 outline: none;
             }
 
-            #SubmitButton {
+            .SubmitButton {
                 font-family: Spartan;
                 font-style: normal;
                 font-weight: bold;
@@ -152,17 +157,17 @@
                 text-align: center;
                 border: none;
                 outline: none;
-                color: #C7D9F3;
-                background: #79A1DB;
+                color: #c7d9f3;
+                background: #79a1db;
                 border-radius: 1.5vh;
                 width: 8vw;
                 height: 7vh;
             }
 
-            #SubmitButton:hover{
+            .SubmitButton:hover {
                 transition: all 0.4s;
-                background: #32435C;
-                color: #C7D9F3;
+                background: #32435c;
+                color: #c7d9f3;
             }
         }
     }

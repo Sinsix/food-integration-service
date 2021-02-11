@@ -1,0 +1,138 @@
+#ContainerBox{
+    z-index: 2;
+    display: inline-block;
+    .SidebarNull{
+        //Return transitions are missing
+        width: 0px;
+        transform: translate3d(-100%, 0px, 0px);
+        transition: all 0.5 ease 0s;
+    }
+    .SideContentNull{
+        display: none;
+        transition: width 0.5s;
+    }
+}
+.MenuIcon{
+    cursor: pointer;
+    top: 1.5vh;
+    margin: 0;
+    position: absolute;
+    z-index: 5;
+}
+.Bar1, .Bar2, .Bar3{
+    z-index: 4;
+    width:2vw;
+    height: 0.5vh;
+    margin: 6px 0;
+    min-width: 15px;
+    transition: all 0.2s;
+    background-color: white;
+}
+
+.Change .Bar1{
+    z-index: 4;
+    background-color: #79A1DB;
+    width:2vw;
+}
+.Change .Bar2{
+    z-index: 4;
+    background-color: #79A1DB;
+    width:0.5vw;
+}
+.Change .Bar3{
+    z-index: 4;
+    background-color: #79A1DB;
+    width:1.5vw;
+}
+
+.SidebarChange{
+    z-index: 3;
+    box-sizing: border-box;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+    color: #4E545C;
+    // border: 1px solid red;
+    background-color: white;
+    transition: width 0.2s;
+    position: absolute;
+    height: 93vh;
+    left: 0;
+    top: 0;
+    transition: width 0.5s;
+    width: 40vw;
+    box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+    .SideContentChange{
+        // border: 1px solid red;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+    .HeaderMenu{
+        // border: 1px solid yellow;
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        .CircleImage {
+            background-color: #aaa;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+            position: relative;
+          }
+          
+          .CircleImage img {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+          }
+    }
+    .Content{
+        margin-top: 2vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        // border: 1px solid green;
+        width: 80%;
+
+        ul{
+            list-style: none;
+            text-decoration: none;
+            color: #AFAFAF;
+            font-size: 1em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 2vh;
+            li{
+                a{
+                    align-items: center;
+                    display: flex;
+                    column-gap: 5vw;
+                    font-style: normal;
+                    font-weight: 600;
+                    color: #AFAFAF;
+                    font-size: 1em;
+                }
+                .Divisor{
+                    border-bottom: 1.5px solid #DEDEDE;
+                }
+            }
+            
+            .SettingsIcon{
+                color: #AFAFAF;
+                font-size: 1.5em;
+            }
+        }
+
+        .PowerIcon{
+            margin-top: 3vh;
+            color: #79A1DB;
+            font-size: 3em;
+        }
+    }
+}
