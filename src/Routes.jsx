@@ -1,18 +1,18 @@
 import React from 'react'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
-// import components
-import Login from './Pages/Login'
-import Register from './Pages/Register'
-import Shop from './Pages/Shop'
+import { BrowserRouter, Route } from 'react-router-dom'
+
+// Pages
+import Login from './pages/Login'
+import Register from './pages/Register'
+import Shop from './pages/Shop'
+
 function Routes () {
   return (
-    <BrowserRouter>
-      <Switch>
-        <Route path="/" exact render={() => (<layout> <Login /> </layout>)} /> {/* The login page being the main route */}
-        <Route path="/register" component={Register} /> {/* Route to register page */}
-        <Route path="/shop" exact render={() => (<layout> <Shop /> </layout>)} /> {/* The login page being the main route */}
-      </Switch>
-    </BrowserRouter>
+  <BrowserRouter>
+      <Route path="/" exact render={() => (<Login />)} /> {/* The login page being the main route */}
+      <Route path="/register" render={() => (<Register/>)} /> {/* Route to register page */}
+      <Route path="/shop" render={() => (<Shop />)} /> {/* The login page being the main route */}
+   </BrowserRouter>
   )
 };
 

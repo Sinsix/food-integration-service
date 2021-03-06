@@ -3,11 +3,7 @@ import Routes from './Routes'
 import './App.scss'
 
 function App () {
-  return (
-    <div>
-      <Routes />
-    </div>
-  )
+  return <Routes />
 }
 
 export default App

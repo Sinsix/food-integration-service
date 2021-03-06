@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 // importing components
 import Header from './../../components/Header'
-import BodyPanel from './../../components/BodyPanel'
+import LoginPanel from './../../components/LoginPanel'
 // Login page (Main page)
 function Login () {
   const options = ['Administrador', 'Ajuda']
@@ -9,7 +9,7 @@ function Login () {
   return (
     <Fragment>
         <Header options={options} />
-        <BodyPanel />
+        <LoginPanel />
     </Fragment>
   )
 }
