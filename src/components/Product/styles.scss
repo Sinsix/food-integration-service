@@ -1,0 +1,38 @@
+.product{
+    width: 16vh;
+    height: 16vh;
+    background-color: #DEDEDE;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .titleProduct{
+        position: absolute;
+        background-color: #AFAFAF;
+        width: 16vh;
+        height: 4vh;
+        display: flex;
+        align-items: center;
+    }
+    >.buttonsProduct{
+        display: flex;
+        justify-content: space-between;
+
+        >.btn{
+            outline: none;
+            border: none;
+            background-color: #7E7E7E;
+            color: white;
+            width: 7vh;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        >.btnAdd{
+            border-radius: 0 25px 25px 0;
+        }
+
+        >.btnRemove{
+            border-radius: 25px 0px 0px 25px;
+        }
+    }
+}
