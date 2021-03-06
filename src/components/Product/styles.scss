@@ -1,37 +1,38 @@
-.product{
-    width: 16vh;
-    height: 16vh;
-    background-color: #DEDEDE;
+.product {
+    width: 144px;
+    height: 144px;
+    background-color: #dedede;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    .titleProduct{
-        position: absolute;
-        background-color: #AFAFAF;
-        width: 16vh;
-        height: 4vh;
+    > .titleProduct {
+        // position: absolute;
+        background-color: #afafaf;
+        overflow-wrap: break-word;
+        width: 100%;
+        height: 36px;
         display: flex;
         align-items: center;
     }
-    >.buttonsProduct{
+    > .buttonsProduct {
         display: flex;
         justify-content: space-between;
 
-        >.btn{
+        > .btn {
             outline: none;
             border: none;
-            background-color: #7E7E7E;
+            background-color: #7e7e7e;
             color: white;
-            width: 7vh;
+            width: 63px;
             font-weight: bold;
             font-size: 1.2em;
         }
 
-        >.btnAdd{
+        > .btnAdd {
             border-radius: 0 25px 25px 0;
         }
 
-        >.btnRemove{
+        > .btnRemove {
             border-radius: 25px 0px 0px 25px;
         }
     }
